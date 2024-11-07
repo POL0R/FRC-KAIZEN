@@ -15,8 +15,7 @@ function App() {
         {/* Wrap the app in FirebaseProvider to provide Firebase context */}
         
         <Routes>
-          <Route path="/" element={<Loading />} />
-          <Route path="/home" element={<HomePage />} />
+          <Route path="/" element={<HomePage />} />
           <Route path="/*" element={<NotFound />} />
         </Routes>
         
