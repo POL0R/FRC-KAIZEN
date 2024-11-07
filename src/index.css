@@ -1,0 +1,800 @@
+
+* {
+
+  margin: 0;
+  padding: 0;
+}
+
+.errorHead {
+  color: rgba(5, 96, 22, 0);
+  font-size: 25vw;
+  -webkit-text-stroke: 2px rgb(21, 164, 62);
+  font-style: italic;
+  letter-spacing: 3vw;
+}
+
+.errorBodyBackHolder {
+  font-family: cc-overbyte-off, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  background-color: rgb(26, 26, 28);
+}
+
+.loadingMainHolder {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+.cogwheelLoader {
+  scale: 0.2;
+  margin-top: -5px;
+  position: relative;
+}
+
+.cogwheelLogo {
+  scale: 0.275;
+  position: absolute;
+}
+
+.errorCarryingContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.errorCarrying {
+  outline: none;
+  color: white;
+  font-size: 5vw;
+  margin-top: -2.5vw;
+}
+
+.buttonError {
+  width: 13vw;
+  height: 3vw;
+  border-radius: 20px;
+  font-family: "nicholas", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  margin-top: 2vw;
+  transition: all 0.4s ease-in-out;
+  font-size: 1.2vw;
+  border: 3.5px solid black;
+}
+
+.buttonError:hover {
+cursor: nw-resize;
+box-shadow: rgba(38, 173, 52, 0.56) 0px 22px 70px 4px;
+border-color: green;;
+}
+
+.homePageMainHolder {
+  background-color: rgb(31, 31, 36);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.circleHolderHome {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 40vw;
+  height: 40vw;
+  border-radius: 50%;
+  box-shadow: 
+    0 0 20px #9fc8fb,
+    20px 0 100px rgb(9, 51, 112),
+    20px 0 100px #9fc8fb,
+    inset 0 0 100px #9fc8fb,
+    inset 50px 0 80px rgb(9, 51, 112),
+    inset -50px 0 80px #9fc8fb,
+    inset 50px 0 300px rgb(9, 51, 112),
+    inset -50px 0 300px #9fc8fb;
+  animation: pulsate 6s linear infinite;
+}
+
+.boxDropHome {
+  width: 40vw;
+  height: 40vw;
+  z-index: 2;
+}
+
+.spacerTester {
+  width: 100vw;
+  height: 100vh;
+}
+
+.wrapperTeamFormation {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  align-items: center;
+  height: 80%;
+  top: -35%;
+  position: relative;
+}
+
+.mainThingsHolderHero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 100vw;
+  height: 100vh;
+}
+
+.homeNameRevealMain {
+  position: relative;
+  font-family: sofachrome, sans-serif;
+font-weight: 400;
+font-style: italic;
+color: rgba(255, 255, 255, 0);
+-webkit-text-stroke: 2px white;
+font-size: 14.2vw;
+left: -100%;
+text-shadow: 0px 0px 16px rgba(255,255,255,0.7);
+}
+
+.homeNameRevealMainDiv {
+  width: 200%;
+  overflow: hidden;
+}
+
+.comingSoonText {
+  font-family: "nicholas", sans-serif;
+font-weight: 400;
+font-style: italic;
+font-style: normal;
+  color: white;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  justify-content: flex-end;
+  padding-right: 5vw;
+  
+}
+
+.spanComingSoonText {
+  font-size: 5vw;
+  text-shadow: 0px 0px 16px rgba(255,255,255,0.3);
+}
+
+.teamFormationDivHome {
+  width: 100vw;
+  height: 150vh;
+  
+  margin-top: 5vh;
+}
+
+.teamImageFixer {
+  opacity: 0;
+  width: 27vw;
+  height: 50vh;
+}
+
+.teamImageM1L {
+  position: absolute;
+  top: 5%;
+  right: 40%;
+  z-index: 5;
+}
+
+.teamImageM1 {
+  position: absolute;
+  top: 30%;
+opacity: 0;
+  z-index: 5;
+}
+
+.teamImageM1R {
+  position: absolute;
+  top: 5%;
+  left: 40%;
+  z-index: 5;
+
+}
+.teamImageM2R {
+  position: absolute;
+  top: -5%;
+  right: 50%;
+  
+}
+
+.teamImageM2L {
+  position: absolute;
+  top: -5%;
+  left: 50%;
+}
+
+.outlinerTeamHead {
+  margin-top: 35vw;
+  font-family: "nicholas", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  color: transparent;
+  font-size: 20vw;
+  -webkit-text-stroke: 2px #fff;
+  opacity: 0;
+  text-align: center;
+  text-shadow: 0px 0px 40px rgba(255,255,255,0.3);
+}
+
+.spacer {
+  width: 100vw;
+  height: 100vh;
+
+}
+
+.carouselStoryHolder {
+  position: relative;
+  width: 100%;
+  overflow-x: scroll; /* Allow horizontal scrolling */
+  scroll-behavior: smooth; /* Smooth scrolling effect */
+  scrollbar-color: transparent;
+  margin-left: 5vw;
+}
+
+.carouselStories {
+  display: flex; /* Align items in a row */
+  width: max-content; /* Prevent the carousel from wrapping */
+  gap: 4vw;
+  margin-bottom: 5vw;
+  left: -170%;
+  position: relative;
+}
+
+
+.carouselImageContainer {
+  position: relative;
+  width: 50vw; /* Define the size of the images */
+  height: 70vh;
+  margin-right: 10px; /* Space between images */
+  border-radius: 2vw;
+  border: 1px solid white;
+  overflow: hidden; /* Ensure content doesn't overflow */
+  
+}
+
+.carouselImageContainer:hover {
+  cursor: pointer;
+}
+
+
+.carouselImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 2vw; /* Ensures image has rounded corners */
+  transition: all 0.5s ease-in-out;
+}
+
+.carouselText {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.5); /* Dark semi-transparent background */
+  color: white;
+  padding: 10px;
+  text-align: center;
+  backdrop-filter: blur(10px); /* Blurred background effect */
+  opacity: 0;
+  transform: translateY(100%); /* Initially hidden */
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  font-size: 3vw;
+  overflow: hidden;
+}
+
+.carouselImageContainer:hover .carouselText {
+  opacity: 1;
+  transform: translateY(0); /* Slide up and reveal the text */
+  font-family: "nicholas", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 3vw;
+}
+
+.carouselImageContainer:hover .carouselImage {
+  scale: 1.1;
+}
+
+
+.holderMain {
+  position: relative;
+  width: 100vw;
+  overflow: hidden;
+}
+
+.missionMainHolder {
+  position: relative;
+  margin-top: 5vw;
+  
+  width: 100vw;
+  height: 80vh;
+}
+
+.missionSecondaryHolder {
+  display: flex;
+  justify-content: space-between;
+}
+
+.dartImage {
+  position: absolute;
+  top: 10px;
+  left: 0px;
+  width: 15%;
+  height: 20vh;
+  transform: rotate(10deg);
+  z-index: 7;
+}
+
+
+.dartBoardImage {
+  position: relative;
+  width: 35%;
+  height: 55vh;
+} 
+
+.textHolder {
+  display: flex;
+  flex-direction: column;
+  padding-left: 3vw;
+  width: 70%;
+  position: relative;
+}
+
+.missionTextHolderHome {
+  font-size: 7vw;
+  font-family: "sofachrome", sans-serif;
+font-weight: 400;
+font-style: italic;
+font-style: normal;
+  color: transparent;
+  z-index: 2;
+  -webkit-text-stroke: 2px white;
+  
+}
+
+.missionMover {
+  position: absolute;
+  width: 0%;
+  overflow: hidden;
+  height: 7vw;
+  z-index: 0;
+  
+}
+
+.missionTextHolderHome2 {
+  color: #9fc8fb;
+}
+
+.missionMoverMain {
+  position: relative;
+}
+
+.mainTextInfoMission {
+  font-family: "nicholas", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: white;
+  padding-left: 3vw;
+  opacity: 0;
+}
+
+.zoomMainHolder {
+  display: flex;
+  position: absolute;
+  left: 50vw;
+  top: 50vh;
+  height: 80vh;
+  width: 80vw;
+  background-color: #7b8089ef;
+  transform: translate(-50%, -50%);
+  z-index: 100;
+  position: fixed;
+  font-family: "nicholas", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.41);
+}
+
+.frostyEffectBack {
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100vh;
+  width: 100vw;
+  z-index: 100;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border:1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+}
+
+.headerTitle {
+  font-size: 4vw;
+}
+
+.zoomMainLeftHolder {
+  width: 50%;
+  padding: 2vw;
+}
+
+.zoomMainRightHolder {
+  border-radius: 0px 10px 10px 0px;
+  width: 50%;
+  overflow: hidden;
+  
+}
+
+
+.textWrapperMission {
+  width: 90%;
+  font-size: 1.8vw;
+  font-family: dunbar-low, sans-serif;
+  font-weight: 200;
+  font-style: normal;
+margin-top: 2.2vw;
+line-height: 2.6vw;
+}
+
+.visionEyeImg {
+  position: relative;
+  left: -3vw;
+  scale: 0.8;
+}
+
+.bodyMainZoom {
+  font-size:1.7vw;
+  line-height: 2vw;
+  margin-top: 2.5vw;
+}
+
+.visionMainHolder {
+  height: 100vh;
+}
+
+.outlinerTeamHead2 {
+  opacity: 1;
+  text-align: center;
+  color: white;
+}
+
+.visionInformationHolder {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: white;
+  width: 85%;
+  height: 100vw;
+}
+
+.visitInformationPane {
+  font-size: 2.4vw;
+  font-family: nicholas, sans-serif;
+  font-weight: 200;
+  font-style: normal;
+  margin-top: 4vw;
+  text-align: center;
+}
+
+.loadSubmitting {
+  color: white;
+  
+}
+
+.kaizenCarouselTextHolder {
+
+flex-wrap: nowrap;
+width: 250%;
+left: 75%;
+  display: flex;
+  gap: 4vw;
+  position: relative;
+overflow: scroll;
+margin-top: 5vw;
+height: 25vw;
+}
+
+.NothomeNameRevealMain {
+  left: 0;
+  font-size: 6vw;
+  font-family: sofachrome, sans-serif;
+font-weight: 400;
+font-style: italic;
+letter-spacing: -0.51vw;
+color: rgba(255, 255, 255, 0);
+-webkit-text-stroke: 2px white;
+color: #cbd7f93b;
+}
+
+.menuNavHolder {
+  color: white;
+  background-color: #1c3b5ef4; /* Navbar background */
+  width: 27vw;
+  height: 100vh;
+  z-index: 102; /* Make sure it stays above other content */
+  display: flex;
+  flex-direction: column;
+  padding: 3vw;
+  justify-content: space-between;
+  border-radius: 10px 0 0 10px;
+  font-family: "nicholas", sans-serif;
+}
+
+
+.navbarMenuOptions {
+  font-size: 4vw;
+  position: relative;
+  transition: 0.3s all ease-in;
+}
+
+.navbarMenuOptions::after {
+  
+  content: "";
+  top: 100%;
+  left: 2%;
+  width: 0%;
+  position: absolute;
+  background-color: white;
+  height: 5px;
+  transition: 0.3s all ease-in-out;
+
+}
+
+.navbarMenuOptions:hover {
+  text-shadow: 0 0 2px white;
+  cursor: pointer;
+}
+
+.navbarMenuOptions:hover::after{
+  width: 20%;
+}
+
+.frostyEffectBack2 {
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(10px);
+    border:1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+}
+
+.mainMainerNavHolder, .menuNavHolder {
+  z-index: 102;  /* Make sure it's on top of the frosty background */
+}
+
+.mainMainerNavHolder {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  z-index: 101;
+  width: 27vw;    /* This defines how wide the menu is */
+  font-size: 2.3vw;
+  height: 100vh;   /* Full viewport height */
+  right: 0;        /* Sticks it to the right edge */
+  top: 0;          /* Ensure it's from the top */
+  background-color: #1c3b5ef4; /* Navbar background color */
+}
+
+
+.socialsNav { 
+  width: 100%;
+  height: 15%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  font-size: 1.2vw;
+}
+
+.optionHolder {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2vw;
+}
+
+.socialIcon {
+  width: 2vw;
+  height: 2vw;
+  transition: 0.2s all ease-in;
+}
+
+
+.socialMediaIcons {
+  width: 50%;
+  display: flex;
+  justify-content: space-evenly;
+  gap: 2vw
+}
+
+.socialIcon:hover {
+  cursor: pointer;
+  filter:brightness(70%);
+}
+
+.hamburger-menu {
+  width: 35px;
+  height: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  cursor: pointer;
+  position: fixed;
+  top: 20px;
+  right: 20px;
+}
+
+.bar {
+  width: 100%;
+  height: 5px;
+  background-color: #ffffff;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+
+.hamburger-menu:hover .bar {
+  background-color: #555;
+}
+
+.letITscroll {
+  overflow: scroll;
+  width: 100%;
+}
+
+.contactUsMainHolder {
+  background-color: rgba(36, 81, 132, 0.756);
+  border-radius: 20px;
+  width: 90%;
+  height: 85vh;
+  display: flex;
+  font-family: nicholas;
+  border: 1px solid white;
+}
+
+.outlinerTeamHead3 {
+  opacity: 1;
+  text-align: center;
+  color: white;
+  font-size: 12vw;
+}
+
+.leftSideHolder {
+  height: 100%;
+  width: 50%;
+  background-image: url("carousel1.jpg");
+  background-position: center;
+  background-size: cover;
+  overflow: hidden;
+  border-radius: 10px 0px 0px 10px;
+}
+
+.rightSideHolder {
+  overflow-y: scroll;
+  padding: 2vw;
+  
+  overflow: hidden;
+  border-radius:0 20px 20px 0;
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+}
+
+.contactUshead {
+  font-size: 4vw;
+  font-family: sofachrome;
+  font-style: italic;
+  color: #eaf1f9;
+}
+
+.labeller {
+  font-size: 1.3vw;
+  font-weight: 500;
+  color: white;
+}
+
+.socialMediaPosts {
+  width: 100vw;
+  height: 100vh;
+}
+
+.inputFields {
+  width: 70%;
+  padding-left: 1vw;
+  height: 3vw;
+  font-family: nicholas;
+  border-radius: 5px;
+  border: none;
+  margin-top: 0.5vw;
+}
+
+.innerContactPane {
+  margin-top: 2vw;
+  display: flex;
+  flex-direction: column;
+  gap: 2vw;
+}
+
+.inputAdd {
+  padding: 1vw;
+  height: 3vw;
+}
+
+.footerLogo {
+  width: 20vw;
+  height: 25vh;
+  margin-left: 3vw;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 4vw;
+  width: 100vw;
+  height: 25vh;
+  background-color: #2b2b3089;
+  border-top: 1px solid #ddd9d976;
+  color: white;
+  font-family: nicholas;
+}
+
+.imageFooterLeft {
+  display: flex;
+
+  width: 30%;
+}
+
+.linkPagefooter {
+  width: 40%;
+  padding-top: 1vw;
+  padding-left: 1vw;
+}
+
+.footerer>ul {
+  margin-top: 0.7vw;
+  font-size: 1.2vw;
+  margin-left: 1.1vw;
+}
+
+.footerContainerImg {
+  width: 1.2vw;
+  height: 1.2vw;
+}
+
+.holderFootSocial {
+  display: flex;
+  gap: 1vw;
+  margin-bottom: 1vw;
+  transition: 0.3s all ease-in-out;
+}
+
+.holderFootSocial:hover {
+  cursor: pointer;
+  font-size: 1.5vw;
+}
+
+.footerer>h1 {
+  margin-bottom: 2vw;
+}
+
+.socialsFooter {
+  width: 30%;
+  padding-top: 1vw;
+  padding-left: 1vw;
+}
+
+.footerer {
+  border-right: 1px solid #ddd9d976;
+}
