@@ -90,15 +90,13 @@ const HomePage = () => {
             delay: 0.5,     // Short delay after the last greeting fades out
             borderRadius: "0 0 100% 100%",  // Keeping this visual effect
         }, 2)
+        tl0432.to(".overflowerHidder", {
+            height: "fit-content",
+            overflowY: "scroll",
+            delay: 0.8,     // Short delay after the last greeting fades out
+        }, 2)
 
-        tl0432.to(".circleHolderHome", {
-            top: 0,
-            delay: 0.5,
-        },2)
-        tl0432.to(".boxDropHome", {
-            top: "5vw",
-            delay: 0.5,  
-        },2)
+
 
         gsap.registerPlugin(ScrollTrigger);
 
@@ -413,7 +411,7 @@ const HomePage = () => {
 
     return (
 
-        <>
+        <div className="overflowerHidder">
         <div className="mainHomeHolder">
             <h1 className="headerGreetingLoad">· Hello</h1>
             <h1 className="headerGreetingLoad">· Bonjour</h1>
@@ -600,7 +598,7 @@ const HomePage = () => {
 
             </div>
         </div>
-        </>
+        </div>
     );
     
 };

@@ -102,12 +102,11 @@ border-color: green;;
     inset 50px 0 300px rgb(9, 51, 112),
     inset -50px 0 300px #9fc8fb;
   animation: pulsate 6s linear infinite;
-  top: 35vw;
+
 }
 
 .boxDropHome {
-  position: relative;
-  top: 15vw;
+
   width: 40vw;
   height: 40vw;
   z-index: 2;
@@ -677,7 +676,7 @@ color: #cbd7f93b;
 .leftSideHolder {
   height: 100%;
   width: 50%;
-  background-image: url("carousel1.jpg");
+  background-image: url("/carousel1.jpg");
   background-position: center;
   background-size: cover;
   overflow: hidden;
@@ -821,4 +820,9 @@ font-style: normal;
   align-items: center;
   justify-content: center;
   z-index: 700;
+}
+
+.overflowerHidder {
+  height: 100vh;
+  overflow-y: hidden;
 }
