@@ -600,6 +600,7 @@ color: #cbd7f93b;
   flex-direction: column;
   justify-content: space-around;
   font-size: 1.2vw;
+  margin-bottom: 5vw;
 }
 
 .optionHolder {
