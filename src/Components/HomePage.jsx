@@ -7,6 +7,8 @@ import { useFirebase } from "../context/firebase";
 
 const HomePage = () => {
 
+    
+
     const dropperRef = useRef();
     const mainParentHolderRefHome = useRef();
     const textRevealHomeRef = useRef();
@@ -38,6 +40,66 @@ const HomePage = () => {
 
 
     useEffect(() => {
+
+        const tl0432 = gsap.timeline();
+
+        // First greeting stays longer
+        tl0432.to(".headerGreetingLoad:first-child", {
+            opacity: 1,
+            duration: 0.2,  // Slightly longer duration for the first greeting
+            ease: "none",   // No easing for sudden effect
+        })
+        .to(".headerGreetingLoad:first-child", {
+            opacity: 0,
+            duration: 0.1,  // Sudden disappearance
+            ease: "none",
+            delay: 0.4      // Stays visible for a longer time before disappearing
+        });
+
+        // Animate all middle greetings (excluding first and last)
+        tl0432.to(".headerGreetingLoad:not(:first-child):not(:last-child)", {
+            opacity: 1,
+            duration: 0.05,  // Shorter duration for sudden appearance
+            ease: "none",    // No easing for sudden effect
+            stagger: {
+                each: 0.2,  // Time between showing each greeting
+                onComplete: function() {
+                    gsap.to(this.targets(), {
+                        opacity: 0,
+                        duration: 0.05,  // Sudden disappearance
+                        ease: "none",
+                        delay: 0.1       // Brief visibility before disappearing
+                    });
+                }
+            }
+        });
+
+        // Last greeting stays longer
+        tl0432.to(".headerGreetingLoad:last-child", {
+            opacity: 1,
+            duration: 0.2,  // Longer duration for the last greeting
+            ease: "none",   // No easing for sudden effect
+            delay: 0.3      // Ensures no overlap with the second-to-last greeting
+        });
+
+        // Main Home Holder moves after the last greeting
+        tl0432.to(".mainHomeHolder", {
+            top: "-100%",
+            duration: 0.3,  // Faster movement for more abrupt transition
+            ease: "none",   // No easing for the container animation
+            delay: 0.5,     // Short delay after the last greeting fades out
+            borderRadius: "0 0 100% 100%",  // Keeping this visual effect
+        }, 2)
+
+        tl0432.to(".circleHolderHome", {
+            top: 0,
+            delay: 0.5,
+        },2)
+        tl0432.to(".boxDropHome", {
+            top: "5vw",
+            delay: 0.5,  
+        },2)
+
         gsap.registerPlugin(ScrollTrigger);
 
         // Create a timeline for scroll-triggered animations (tl)
@@ -350,6 +412,19 @@ const HomePage = () => {
     };
 
     return (
+
+        <>
+        <div className="mainHomeHolder">
+            <h1 className="headerGreetingLoad">· Hello</h1>
+            <h1 className="headerGreetingLoad">· Bonjour</h1>
+            <h1 className="headerGreetingLoad">· Hola</h1>
+            <h1 className="headerGreetingLoad">· مرحبًا</h1>
+            <h1 className="headerGreetingLoad">· Hej</h1>
+            <h1 className="headerGreetingLoad">· こんにちは</h1>
+            <h1 className="headerGreetingLoad">· 你好</h1>
+            <h1 className="headerGreetingLoad">· नमस्ते</h1>
+        </div>
+        
         <div className="holderMain">
             <div className="homePageMainHolder" ref={mainParentHolderRefHome}>
 
@@ -525,7 +600,9 @@ const HomePage = () => {
 
             </div>
         </div>
+        </>
     );
+    
 };
 
 export default HomePage;
