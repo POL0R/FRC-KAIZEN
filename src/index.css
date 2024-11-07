@@ -169,7 +169,7 @@ font-style: normal;
   align-items: end;
   justify-content: flex-end;
   padding-right: 5vw;
-  
+  overflow-y: hidden;
 }
 
 .spanComingSoonText {
@@ -264,13 +264,12 @@ opacity: 0;
 
 .carouselImageContainer {
   position: relative;
-  width: 50vw; /* Define the size of the images */
+  width: 50vw; 
   height: 70vh;
-  margin-right: 10px; /* Space between images */
+  margin-right: 10px; 
   border-radius: 2vw;
   border: 1px solid white;
-  overflow: hidden; /* Ensure content doesn't overflow */
-  
+  overflow: hidden; 
 }
 
 .carouselImageContainer:hover {
@@ -300,7 +299,7 @@ opacity: 0;
   transform: translateY(100%); /* Initially hidden */
   transition: transform 0.3s ease, opacity 0.3s ease;
   font-size: 3vw;
-  overflow: hidden;
+  overflow-x: hidden;
 }
 
 .carouselImageContainer:hover .carouselText {
@@ -438,6 +437,7 @@ font-style: normal;
 .zoomMainLeftHolder {
   width: 50%;
   padding: 2vw;
+  overflow-y: scroll;
 }
 
 .zoomMainRightHolder {

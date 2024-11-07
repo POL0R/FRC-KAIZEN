@@ -338,31 +338,43 @@ const HomePage = () => {
             id: 1,
             title: 'Day 0 - Prelude',
             type: 'image',
-            description: 'The first robotics team at JPIS was born in August 2024, sparked by one student’s determination to compete in the FIRST Robotics Competition (FRC). He gathered a team of 24 people, all eager to dive into the mechanical and electrical field while ensuring everyone contributed to marketing and outreach.',
+            description: "In August 2024, the first robotics team at JPIS was born out of one student's passion for the FIRST Robotics Competition (FRC). Driven by his vision, he brought together 24 enthusiastic teammates who were excited to dive into the world of robotics, marketing, and outreach. The energy was palpable as everyone prepared to start a journey into building and competing with a robot."
         },
         {
             id: 2,
-            title: 'Story 2',
+            title: 'Week 1 - The First',
             type: 'video',
-            description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+            description: "The entire team gathered at our FRC lab, excited to kick off this journey together. We dedicated time to getting to know each other better, engaging in team bonding activities to build a strong foundation of trust and camaraderie. Knowing that we’ll be spending the next six months side-by-side, we’re setting the stage for forming unforgettable memories and creating unbreakable bonds. This time together will strengthen our communication, teamwork, and mutual support, all crucial for the challenges ahead. It was a meaningful start to what promises to be an inspiring and transformative season for all of us.",
         },
         {
             id: 3,
-            title: 'Story 3',
-            type: 'image',
-            description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+            title: 'Week 2 - Painting the Picture',
+            type: 'video',
+            description: 'We dove deeper into understanding the scope of the competition, gaining a clearer picture of the challenges and opportunities ahead. We discussed the specific objectives, rules, and the competitive spirit that FRC embodies, which fuelled our excitement and commitment. After clarifying our overall goals, we began planning our workflow, focusing on creating a structured approach to tackle each aspect of the challenge effectively. Team members grouped themselves according to their interests and skill sets, allowing everyone to contribute where they’re strongest and most passionate. With sub-teams now formed, we have a solid foundation to build on, ensuring each part of the project is managed efficiently. This planning stage has set us up for focused collaboration, as each team can now dive into its area with clarity and direction.',
         },
         {
             id: 4,
-            title: 'Story 4',
+            title: 'Week 3 - Competition',
             type: 'image',
-            description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+            description: "We focused on officially registering our team name and number for the competition, a process that required careful cross-checking and securing final approvals. The team worked tirelessly, paying close attention to every detail to ensure nothing was overlooked. The energy in the room was electric as everyone collaborated to make sure all aspects of our submission were polished and ready. Alongside the registration, we also took on the creative task of designing our team logo, tagline, mission, and vision. Crafting these elements brought a new level of excitement, as we worked to capture the essence of our team’s spirit, goals, and identity. Each part of this branding process, from brainstorming ideas to refining the final designs, has unified our team with a shared purpose and vision. Although the week was a whirlwind of planning and creativity, seeing our hard work come together in such a meaningful way has been incredibly rewarding.",
         },
         {
             id: 5,
-            title: 'Story 5',
-            type: 'video',
-            description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+            title: 'Week 4 - Building Blocks',
+            type: 'image',
+            description: "This week, we got up close and personal with some serious tech, learning to use the laser cutter and 3D printer, Under the watchful guidance of our mentor, we dove into the process of setting up designs, calibrating machines, and understanding the power behind these tools. There's something thrilling about working with equipment that can slice through material with precision… and, yes, it’s a bit dangerous, but hey, we live for the thrill (safely, of course). With every cut and print, we’re unlocking new skills and possibilities for our robot designs. The laser cutter and 3D printer are real game-changers, opening up so many creative options for building custom parts. The team is pumped to keep exploring and pushing the limits of what we can create. Stay tuned as we bring our ideas to life, one laser cut at a time",
+        },
+        {
+            id: 6,
+            title: 'Week 5 - Big Leap',
+            type: 'image',
+            description: 'Big steps forward this week as we tackled our first-ever chassis build inspired by last year’s FRC challenge! From laying out the framework to assembling the drivetrain and connecting the wiring, we’re really getting into the heart of what makes a competitive robot. It’s been a huge learning curve, but the team is excited to see it all come together. Working through each step, we’re not just assembling parts, we’re mastering the skills that will make us stronger in future challenges. This experience has taught us a lot about problem-solving, teamwork, and the technical side of robotics. With the chassis nearly complete, we’re all set to dive into testing and fine-tuning next week. Stay tuned- this is just the beginning.',
+        },
+        {
+            id: 7,
+            title: 'Week 6 - Big Leap',
+            type: 'image',
+            description: '"This week, we launched into building the superstructure and shooting mechanism, using last year’s FRC challenge as our blueprint for learning. As we carefully assembled the superstructure, we gained a deeper understanding of the precision needed to create a robust frame that can withstand intense, dynamic action. Each step brought valuable lessons in engineering stability and strength, as we worked together to build a reliable foundation for the robot. The shooting mechanism, though, was where the real thrill set in. Fine-tuning each component to achieve perfect alignment became an engaging challenge for the team, pushing us to think creatively and troubleshoot as we aimed for precise shots. From brainstorming and prototyping to hands-on building, we’re embracing this chance to hone our technical skills. The robot is beginning to take shape before our eyes, and the whole team is feeling the excitement of seeing our work come to life. We’re eagerly anticipating the day we get to put it all to the test!"',
         }
     ];
 
