@@ -190,13 +190,13 @@ const HomePage = () => {
         })
         .to(teamFormationImageRef1.current, {
             opacity: 1,
-            right: "48%",
+            right: "45%",
             top: "25%",
             duration: 1,
         })
         .to(teamFormationImageRef2.current, {
             opacity: 1,
-            left: "48%",
+            left: "45%",
             top: "25%",
             duration: 1,
         }, "<")

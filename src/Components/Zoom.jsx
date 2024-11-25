@@ -8,7 +8,7 @@ const Zoom = ({ title, info, img, handleCloseZoom }) => {
             <div className="zoomMainHolder" onClick={(e) => e.stopPropagation()}>
                 <div className="zoomMainLeftHolder">
                     <h1 className="headerTitle">{title}</h1>
-                    <p className="bodyMainZoom">{info}</p>
+                    <p className="bodyMainZoom kwepeir">{info}</p>
                 </div>
                 <div 
                     className="zoomMainRightHolder"
@@ -18,6 +18,7 @@ const Zoom = ({ title, info, img, handleCloseZoom }) => {
                         backgroundSize: 'cover'
                     }}
                 >
+                    <p className="bodyMainZoom kwepeir2">{info}</p>
                     {isVideo && (
                         <video className="zoomedVideo" autoPlay loop muted style={{position: "relative", width: '100%', top: "-50%"}}>
                             <source src={img} type="video/mp4" />
